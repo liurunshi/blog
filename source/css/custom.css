@@ -1,0 +1,140 @@
+/* noise */
+body:before {
+  background-image: url(/assets/placeholder/noise.png);
+  content: "";
+  display: block;
+  height: 100%;
+  opacity: .025;
+  pointer-events: none;
+  position: fixed;
+  touch-action: none;
+  width: 100%;
+  z-index: 10;
+}
+
+/* layout */
+@media screen and (max-width: 667px) {
+  :root {
+    --site-bg: #1c1e21;
+  }
+
+  .l_body .l_left {
+    --blur-bg: var(--alpha60);
+    --blur-px: 50px;
+    background: var(--blur-bg);
+    backdrop-filter: saturate(200%) blur(var(--blur-px));
+  }
+}
+
+/* widget */
+.widget-wrapper.post-list .widget-body a:hover {
+  background: var(--alpha50);
+}
+
+/* social */
+.l_left footer.footer {
+  margin: .5rem var(--gap-margin) 1rem;
+}
+
+.social-wrap {
+  justify-content: space-between;
+  align-items: center;
+  filter: invert(85%) sepia(0%) saturate(1%) hue-rotate(87deg) brightness(95%) contrast(98%);
+}
+
+.social-wrap .social:hover {
+  background: var(--alpha20);
+}
+
+/* waline */
+.cmt-body.waline {
+  --waline-white: #000;
+  --waline-light-grey: #666;
+  --waline-dark-grey: #999;
+  --waline-color: #fff;
+  --waline-bg-color: var(--block);
+  --waline-bg-color-light: #272727;
+  --waline-border-color: #333;
+  --waline-disable-bg-color: #444;
+  --waline-disable-color: #272727;
+  --waline-bq-color: #272727;
+  --waline-info-bg-color: #272727;
+  --waline-info-color: #666;
+  --waline-avatar-size: 48px;
+  --waline-m-avatar-size: 44px;
+  --waline-badge-font-size: 13px;
+}
+
+.wl-content .vemoji,
+.wl-content .wl-emoji {
+  height: 24px !important;
+}
+
+.wl-header label,
+.wl-header input,
+.wl-info button,
+.wl-sort li,
+.wl-text-number,
+.wl-time {
+  font-size: 13px !important;
+}
+
+.wl-nick {
+  font-size: 15px !important;
+}
+
+.wl-editor {
+  font-size: 16px !important;
+}
+
+.wl-input,
+.wl-editor,
+.wl-btn {
+  font-family: "LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif;
+}
+
+a.wl-action {
+  display: none !important;
+}
+
+/* post cover */
+.post-list .post-card.post.photo .cover .cover-info[position=bottom] {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .8));
+}
+
+/* wiki logo */
+.post-list .post-card.wiki article .preview img {
+  width: 80px;
+  max-height: 80px;
+}
+
+/* content */
+li {
+  font-size: var(--fsp);
+}
+
+.md-text img {
+  margin: unset;
+}
+
+.swiper {
+  border-radius: 12px;
+  --gap-p: 21px;
+}
+
+/* note */
+.md-text .tag-plugin.note>.title,
+.md-text .tag-plugin.note>.body,
+.md-text .tag-plugin.note>.body p {
+  --fsp: 16px;
+}
+
+/* gallery */
+.tag-plugin.gallery.grid-box[size=xl] {
+  grid-gap: 4px;
+}
+
+.tag-plugin.gallery.grid-box[size=xl] .grid-cell,
+.tag-plugin.gallery.grid-box[size=xl] img {
+  border-radius: 4px;
+}

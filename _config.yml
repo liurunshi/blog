@@ -3,22 +3,24 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: liurunshi's blog
-subtitle: '记录美好生活'
-description: '总是听别人诉说旅行的美好，与其聆听，不如亲手书写'
-keywords:
-author: liurunshi
-language: en
-timezone: 'Asia/Shanghai'
+title: LIURUNSHI
+avatar: /assets/placeholder/avatar.png
+favicon: /assets/placeholder/favicon.ico
+subtitle: 我没有特别聪明😭 | 我只是充满好奇😃 
+description: 这里是LIURUNSHI的个人站点。我在这里记录生活的点滴与感悟，也在这里分享和技术相关的内容。希望我的内容对您有所帮助，如果您有任何想法或问题，欢迎在评论区留言。
+keywords: [博客, 维基, 动态, 生活, 技术, 记录, 分享]
+author: LIURUNSHI
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://liurunshi.github.io
-permalink: :year/:month/:day/:title/
+url: https://liurunshi.github.io
+permalink: :title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
@@ -80,7 +82,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+updated_option: 'date'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -95,14 +97,45 @@ ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: false
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
+
+sitemap:
+  path:
+    - sitemap.xml
+    - sitemap.txt
+  template:
+  template_txt:
+  rel: false
+  tags: true
+  categories: true
+
 ## Themes: https://hexo.io/themes/
-# theme: landscape
-# theme: oasis
-theme: particlex
+theme: stellar
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: 'git'
-  repository: git@github.com:liurunshi/liurunshi.github.io.git
-  branch: main
+  type: ''
+
+# Injections
+inject:
+  head:
+    - <link rel="apple-touch-icon" sizes="180x180" href="/assets/placeholder/apple-touch-icon.png">
+    - <link rel="icon" type="image/png" sizes="32x32" href="/assets/placeholder/favicon-32x32.png">
+    - <link rel="icon" type="image/png" sizes="16x16" href="/assets/placeholder/favicon-16x16.png">
+    - <link rel="manifest" href="/assets/placeholder/site.webmanifest">
+    - <link rel="stylesheet" href="/css/custom.css" media="all" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/lxgwwenkaimono-bold.css" media="all" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/lxgwwenkaiscreen.css" media="all" onload="this.media='all'">
