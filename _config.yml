@@ -127,7 +127,10 @@ theme: stellar
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: 'git'
+  repository: git@github.com:liurunshi/liurunshi.github.io.git
+  branch: main
+
 
 # Injections
 inject:
