@@ -8,8 +8,8 @@ on:
 env:
   GIT_USER: liurunshi
   GIT_EMAIL: liurunshi@gmail.com
-  THEME_REPO: liurunshi/lrs
-  THEME_BRANCH: main
+  THEME_REPO: theme-particlex/hexo-theme-particlex
+  THEME_BRANCH: master
   DEPLOY_REPO: liurunshi/liurunshi.github.io
   DEPLOY_BRANCH: main
 
@@ -26,12 +26,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Checkout theme repo
-        uses: actions/checkout@v4
-        with:
-          repository: ${{ env.THEME_REPO }}
-          ref: ${{ env.THEME_BRANCH }}
-          path: themes/concise
+      # - name: Checkout theme repo
+      #   uses: actions/checkout@v4
+      #   with:
+      #     repository: ${{ env.THEME_REPO }}
+      #     ref: ${{ env.THEME_BRANCH }}
+      #     path: themes/particlex
 
       - name: Checkout deploy repo
         uses: actions/checkout@v4
