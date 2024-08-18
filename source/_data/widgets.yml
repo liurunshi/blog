@@ -26,7 +26,7 @@ employment2024:
 subscriptions:
   layout: markdown
   title: 关于「我的订阅」
-  content: 本页展示的是我关注的站点和博客，但请注意，本站并不交换友情链接。尽管友链有助于提升网站流量，但它也同时带来了限制和束缚。我更喜欢单方面订阅，这样就可以自由地关注自己感兴趣的内容，也无需担心删除友链对别人可能造成的影响。
+  content: 本页展示的是我关注的站点和博客.
 
 music:
   layout: markdown
@@ -39,10 +39,10 @@ music:
         title: 更多歌单
         url: https://open.spotify.com/user/314fomtq7falbqky3e2sjwukpcja
 
-waddledee:
+liurunshi:
   layout: markdown
-  title: 博客为什么取名瓦豆鲁迪？
-  content: 瓦豆鲁迪是星之卡比系列中最常见的小啰啰。因为城堡管饭，所以效忠于帝帝帝大王，但如果伙食一旦变差，就立马不干了！它们是擅长享受生活的乐天派，每天不是在草地上散步，就是在树荫下打盹。它们从不为琐事烦心，也从不和别人争吵。我很向往瓦豆鲁迪的生活方式，想和它们一样无忧无虑，内心充满快乐和满足。
+  title: 博客为什么取名LIURUNSHI？
+  content: 取名好难，我用名字的拼音...
 
 opensource:
   layout: markdown
@@ -53,23 +53,17 @@ opensource:
     items:
       - icon: repository
         title: 博客源码
-        url: https://github.com/parasolwaddledee/blog
-      - icon: repository
-        title: 链接解析
-        url: https://github.com/parasolwaddledee/link
+        url: https://github.com/liurunshi/blog
       - icon: repository
         title: 评论系统
-        url: https://github.com/parasolwaddledee/comments
-      - icon: repository
-        title: 订阅系统
-        url: https://github.com/parasolwaddledee/subscriptions
+        url: https://github.com/liurunshi/blog-comment
 
 label:
   layout: markdown
   title: 我的标签
-  content: 90 后 / IT 系统工程师 / INTJ-A / 坐标上海 / 麦门信徒 / 五星评论家
+  content: 90 后 / IT 系统工程师 / 坐标深圳 
 
 photo:
   layout: markdown
-  title: 2023.11 拍摄于新西兰普卡基湖
-  content: <div class="tag-plugin image" style="margin-top:12px; margin-bottom:12px;"><div class="image-bg"><img src="/assets/more/me/photo.jpg" data-fancybox="true"></div></div>
+  title: 2023.06 拍摄于重庆机场
+  content: <div class="tag-plugin image" style="margin-top:12px; margin-bottom:12px;"><div class="image-bg"><img src="/assets/more/me/me.jpeg" data-fancybox="true"></div></div>
