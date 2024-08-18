@@ -114,7 +114,7 @@ article:
   type: tech # tech: 默认技术类文章, story: 图文类文章，文字和段落间增距大
   # 缩进两个文字宽度，适合文字类博客，可以在 front-matter/topic/wiki 中覆盖此参数
   indent: false # true / false
-  # 如果没有指定封面，是否根据 tags 作为关键词搜索封面图片？
+  # 如果没有指定封面，是否根据 tags 作为关键词搜索封面图片？ß
   auto_cover: false # search from https://source.unsplash.com/
   # 封面图宽高比
   cover_ratio: 2.4
@@ -149,7 +149,7 @@ search:
 
 ######## Comments ########
 comments:
-  service: waline # beaudar, utterances, giscus, twikoo, waline, artalk
+  service: giscus # beaudar, utterances, giscus, twikoo, waline, artalk
   comment_title: 快来参与讨论吧~
   # beaudar
   # https://beaudar.lipk.org/
@@ -176,18 +176,18 @@ comments:
   # https://giscus.app/zh-CN
   giscus:
     src: https://giscus.app/client.js
-    data-repo: xxx/xxx # [在此输入仓库]
-    data-repo-id: # [在此输入仓库 ID]
-    data-category: # [在此输入分类名]
-    data-category-id:
-    data-mapping: pathname
+    data-repo: liurunshi/blog-comment # [在此输入仓库]
+    data-repo-id: R_kgDOMlCACA # [在此输入仓库 ID]
+    data-category: General # [在此输入分类名]
+    data-category-id: DIC_kwDOMlCACM4ChweK
+    data-mapping: title
     data-strict: 0
     data-reactions-enabled: 1
     data-emit-metadata: 0
     data-input-position: top # top, bottom
-    data-theme: preferred_color_scheme
+    data-theme: dark_dimmed
     data-lang: zh-CN
-    data-loading: # lazy
+    data-loading: lazy # lazy
     crossorigin: anonymous
 
   # Twikoo
@@ -282,14 +282,8 @@ footer:
       - '[文章归档](/archives/)'
     维基:
       - '[所有维基](/wiki/)'
-      - '[Self-Hosting](/wiki/self-hosting/)'
-      - '[Windows Server](/wiki/windows-server/)'
-      - '[SQL Server](/wiki/sql-server/)'
     动态:
-      - '[🐱](/news/cat/)'
       - '[2024](/news/)'
-      - '[2023](/news/2023/)'
-      - '[2022](/news/2022/)'
     更多:
       - '[我的订阅](/more/)'
       - '[我的歌单](/more/music/)'
@@ -575,7 +569,7 @@ style:
   leftbar:
     # 可以设置：纯色/渐变色/图片作为背景
     # background: var(--leftbar-bg)
-    background-image: 'linear-gradient(to top, #a3bded 0%, #6991c7 100%)'
+    background-image: 'linear-gradient(to top, #a3bd 0%, #6991c7 100%)'
     blur-px: 150px
     blur-bg: var(--alpha60)
   paginator:

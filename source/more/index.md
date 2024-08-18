@@ -10,14 +10,6 @@ leftbar: subscriptions
 
 {% friends subscriptions %}
 
-{% grid %}
-<!-- cell -->
-{% timeline type:fcircle api:https://subscriptions.waddledee.com/all?rule=created&start=00&end=12 %}
-{% endtimeline %}
-<!-- cell -->
-{% timeline type:fcircle api:https://subscriptions.waddledee.com/all?rule=created&start=12&end=24 %}
-{% endtimeline %}
-{% endgrid %}
 
 <style>
   .md-text .tag-plugin.timeline .timenode>.body, .md-text .tag-plugin.timeline .timenode>.header {

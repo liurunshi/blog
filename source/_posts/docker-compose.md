@@ -4,6 +4,8 @@ cover: /assets/posts/farewell-azeroth/farewell-azeroth-00.jpg
 banner: /assets/posts/farewell-azeroth/farewell-azeroth-00.jpg
 poster:
   headline: docker compose
+  # topic: 标题上方的小字 
+  # color: red
   caption: 正确的打开方式！
 title: docker compose使用
 description: docker compose使用
