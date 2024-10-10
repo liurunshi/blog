@@ -34,7 +34,7 @@ docker compose cp --all ~/local/path/to/source/file my-service:~/path/to/copied/
 
 ```
 
-### **在compose文件中可以设置环境变量**
+### **在compose文件中可以设置环境变量 test**
 
 ```
 1.env_file用于指定环境文件.env的路径
